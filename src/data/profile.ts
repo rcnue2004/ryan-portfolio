@@ -17,7 +17,7 @@ export const profile = {
   /** Drop your resume PDF into /public/resume.pdf and this link just works. */
   resumeUrl: '/resume.pdf',
 
-  bio: `I'm a Finance MS student at UT Dallas (BS May 2026, MS expected May 2027) with a 3.9+ GPA and a passion for financial analytics and data-driven decision making. I interned at Carpion Private Wealth, where I got hands-on experience in private wealth management. I grew up in Saudi Arabia, and outside the classroom I captain the UTD Men's Ultimate Frisbee team — where I also built a fantasy stock market for the league.`,
+  bio: `I'm a Finance MS student at UT Dallas (BS May 2026, MS expected May 2027) with a 4.0 graduate GPA and a passion for financial analytics and data-driven decision making. I interned at Carpion Private Wealth, where I got hands-on experience in private wealth management. I grew up in Saudi Arabia, and outside the classroom I captain the UTD Men's Ultimate Frisbee team — where I also built a fantasy stock market for the league.`,
 
   /** Animated counters in the About section. `suffix` is appended after the number. */
   stats: [
