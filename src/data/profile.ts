@@ -22,7 +22,7 @@ export const profile = {
   /** Animated counters in the About section. `suffix` is appended after the number. */
   stats: [
     { label: 'GPA', value: 3.5, suffix: '+', decimals: 1 },
-    { label: 'Projects', value: 4, suffix: '+', decimals: 0 },
+    { label: 'Projects', value: 3, suffix: '+', decimals: 0 },
     { label: 'Years of Study', value: 4, suffix: '', decimals: 0 },
     { label: 'Internships', value: 1, suffix: '', decimals: 0 },
   ],
