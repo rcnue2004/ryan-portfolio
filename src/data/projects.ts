@@ -92,7 +92,7 @@ export const projects: Project[] = [
       'Results coming soon',
     ],
     courseContext: 'OPRE 3360 — Management Methods in Decision Making, UT Dallas',
-    githubUrl: '', // TODO: add GitHub URL
+    githubUrl: 'https://github.com/rcnue2004/airline-revenue-management',
     liveUrl: '',
     imageUrl: '',
     featured: true,
