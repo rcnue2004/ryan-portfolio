@@ -118,21 +118,4 @@ export const projects: Project[] = [
     imageUrl: '',
     featured: true,
   },
-  {
-    id: 'southwest-rm',
-    title: 'Southwest Airlines RM & Pricing Analysis',
-    category: 'Finance',
-    status: 'In Progress',
-    description:
-      'Revenue management and pricing strategy analysis mirroring real-world airline RM analyst workflows.',
-    longDescription:
-      'A revenue management and pricing strategy analysis applying airline yield management principles, including EMSR optimization, fare class inventory control, booking curve analysis, and variance reporting. Built to mirror the day-to-day workflows of a real-world RM analyst.',
-    techStack: ['SQL', 'Python', 'Excel'],
-    keyMetrics: ['Coming soon'],
-    courseContext: 'Personal Project',
-    githubUrl: '',
-    liveUrl: '',
-    imageUrl: '',
-    featured: false,
-  },
-];
+  ];
