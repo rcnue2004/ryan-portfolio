@@ -9,10 +9,10 @@
 
 export const profile = {
   name: 'Ryan Neumann',
-  title: 'MS Finance Candidate | UT Dallas | Data & Finance Analyst',
+  title: 'MS Finance Candidate | UT Dallas',
   tagline: 'Turning financial data into decisions.',
   email: 'rcnue2004@gmail.com',
-  linkedin: 'https://www.linkedin.com/in/ryanneumannutdfin/',
+  linkedin: 'https://www.linkedin.com/in/ryanneumannfin/',
   github: 'https://github.com/rcnue2004',
   /** Drop your resume PDF into /public/resume.pdf and this link just works. */
   resumeUrl: '/resume.pdf',
@@ -21,7 +21,7 @@ export const profile = {
 
   /** Animated counters in the About section. `suffix` is appended after the number. */
   stats: [
-    { label: 'GPA', value: 3.9, suffix: '+', decimals: 1 },
+    { label: 'GPA', value: 3.5, suffix: '+', decimals: 1 },
     { label: 'Projects', value: 4, suffix: '+', decimals: 0 },
     { label: 'Years of Study', value: 4, suffix: '', decimals: 0 },
     { label: 'Internships', value: 1, suffix: '', decimals: 0 },
@@ -55,7 +55,7 @@ export const profile = {
     {
       org: "UTD Men's Ultimate Frisbee",
       role: 'Captain',
-      period: 'August 2024 – Present',
+      period: 'August 2024 – August 2026',
       description:
         'Lead practices, strategy, and logistics for the team; built the Frisbee Stock Exchange for the league.',
     },
@@ -67,13 +67,13 @@ export const profile = {
       degree: 'BS Finance',
       school: 'The University of Texas at Dallas',
       date: 'May 2026',
-      detail: 'GPA 3.9+',
+      detail: 'GPA 3.5',
     },
     {
       degree: 'MS Finance',
       school: 'The University of Texas at Dallas',
       date: 'Expected May 2027',
-      detail: '',
+      detail: 'GPA 4.0',
     },
   ],
 
