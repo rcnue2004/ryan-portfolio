@@ -103,8 +103,11 @@ export const projects: Project[] = [
       'A SQL-based revenue management simulation modeling dynamic seat pricing and inventory optimization for a Dallas–Chicago route over a 90-day booking window. The analysis covers fare class yield, demand elasticity, and overbooking optimization, and compares dynamic pricing against a flat-rate baseline to quantify revenue uplift.',
     techStack: ['SQL (SQLite)', 'Python', 'pandas', 'matplotlib'],
     keyMetrics: [
-      // TODO: replace with real numbers once the simulation runs
-      'Results coming soon',
+      '$2.06M simulated revenue across 90 flights at an 80.7% load factor',
+      'Late bookers paid ~$226/seat vs ~$141 for early bookers — classic hockey-stick booking curve',
+      'A/B test: closing discount fares 24 days out earned +$1,057/flight despite 2.5 pts lower load factor',
+      'Overbooking model: 2 seats/flight pad caps denied-boarding exposure at 2.2% (5.2% avg no-show rate)',
+      '10 named, commented SQL queries — all analysis in SQL, Python only for data generation and charts',
     ],
     courseContext: 'OPRE 3360 — Management Methods in Decision Making, UT Dallas',
     githubUrl: 'https://github.com/rcnue2004/airline-revenue-management',
