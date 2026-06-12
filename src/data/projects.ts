@@ -12,7 +12,7 @@
  * Field guide:
  *   id              unique string, used internally (no spaces)
  *   title           project name shown on the card
- *   category        MUST be one of: "Finance" | "Data & Analytics" | "Web Apps" | "Research"
+ *   category        MUST be one of: "Finance" | "Data & Analytics" | "Web Apps"
  *                   (this drives the filter buttons — new categories appear automatically)
  *   status          MUST be one of: "Live" | "Completed" | "In Progress"
  *   description     one-liner shown on the card (keep under ~25 words)
@@ -33,7 +33,7 @@
  *   featured        true = sorted to the front of the grid
  */
 
-export type ProjectCategory = 'Finance' | 'Data & Analytics' | 'Web Apps' | 'Research';
+export type ProjectCategory = 'Finance' | 'Data & Analytics' | 'Web Apps';
 export type ProjectStatus = 'Live' | 'Completed' | 'In Progress';
 
 export interface ProjectAttachment {
@@ -65,7 +65,6 @@ export const CATEGORIES: ProjectCategory[] = [
   'Finance',
   'Data & Analytics',
   'Web Apps',
-  'Research',
 ];
 
 export const projects: Project[] = [
@@ -139,7 +138,7 @@ export const projects: Project[] = [
     courseContext: 'FIN 4395 — Capstone Senior Project, UT Dallas',
     githubUrl: '', // TODO: add GitHub URL
     liveUrl: '',
-    imageUrls: [],
+    imageUrls: ['/screenshots/lulu_presentation.png', '/screenshots/lulu_dcf.png'],
     attachments: [
       { label: 'Presentation (PowerPoint)', url: '/files/Lululemon_Presentation.pptx' },
       { label: 'Valuation Model (Excel)', url: '/files/Lululemon_Valuation_Model.xlsx' },
