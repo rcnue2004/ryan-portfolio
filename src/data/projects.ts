@@ -88,7 +88,7 @@ export const projects: Project[] = [
     courseContext: 'Personal Project',
     githubUrl: 'https://github.com/rcnue2004/FSE',
     liveUrl: '', // TODO: add live demo URL
-    imageUrls: [],
+    imageUrls: ['/screenshots/fse_main_page.png'],
     attachments: [],
     featured: true,
   },
@@ -109,7 +109,12 @@ export const projects: Project[] = [
     courseContext: 'OPRE 3360 — Management Methods in Decision Making, UT Dallas',
     githubUrl: 'https://github.com/rcnue2004/airline-revenue-management',
     liveUrl: '',
-    imageUrls: [],
+    imageUrls: [
+      '/screenshots/1_booking_curve.png',
+      '/screenshots/2_revenue_by_fare_class.png',
+      '/screenshots/3_dynamic_vs_flat_pricing.png',
+      '/screenshots/4_no_show_distribution.png',
+    ],
     attachments: [],
     featured: true,
   },
