@@ -140,7 +140,10 @@ export const projects: Project[] = [
     githubUrl: '', // TODO: add GitHub URL
     liveUrl: '',
     imageUrls: [],
-    attachments: [],
+    attachments: [
+      { label: 'Presentation (PowerPoint)', url: '/files/Lululemon_Presentation.pptx' },
+      { label: 'Valuation Model (Excel)', url: '/files/Lululemon_Valuation_Model.xlsx' },
+    ],
     featured: true,
   },
   ];
