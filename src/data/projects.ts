@@ -22,13 +22,26 @@
  *   courseContext   course name or "Personal Project" (shown in modal; "" to hide)
  *   githubUrl       full URL, or "" to hide the GitHub button
  *   liveUrl         full URL, or "" to hide the Live Demo button
- *   imageUrl        path to a screenshot (put images in /public, e.g. "/screenshots/fse.png"),
- *                   or "" for a placeholder
+ *   imageUrls       screenshots shown as a gallery in the modal. Put images in
+ *                   public/screenshots/ and list them, e.g.
+ *                   ['/screenshots/fse-1.png', '/screenshots/fse-2.png'].
+ *                   Use [] for the "coming soon" placeholder.
+ *   attachments     viewable/downloadable files shown as buttons in the modal.
+ *                   Put files in public/files/ and list them, e.g.
+ *                   [{ label: 'DCF Model (Excel)', url: '/files/lulu-dcf.xlsx' }].
+ *                   PDFs open in the browser; other files download. Use [] for none.
  *   featured        true = sorted to the front of the grid
  */
 
 export type ProjectCategory = 'Finance' | 'Data & Analytics' | 'Web Apps' | 'Research';
 export type ProjectStatus = 'Live' | 'Completed' | 'In Progress';
+
+export interface ProjectAttachment {
+  /** Button text, e.g. "Final Deck (PDF)" */
+  label: string;
+  /** File URL — put the file in /public/files and use "/files/name.ext" */
+  url: string;
+}
 
 export interface Project {
   id: string;
@@ -42,7 +55,8 @@ export interface Project {
   courseContext: string;
   githubUrl: string;
   liveUrl: string;
-  imageUrl: string;
+  imageUrls: string[];
+  attachments: ProjectAttachment[];
   featured: boolean;
 }
 
@@ -74,7 +88,8 @@ export const projects: Project[] = [
     courseContext: 'Personal Project',
     githubUrl: 'https://github.com/rcnue2004/FSE',
     liveUrl: '', // TODO: add live demo URL
-    imageUrl: '',
+    imageUrls: [],
+    attachments: [],
     featured: true,
   },
   {
@@ -94,7 +109,8 @@ export const projects: Project[] = [
     courseContext: 'OPRE 3360 — Management Methods in Decision Making, UT Dallas',
     githubUrl: 'https://github.com/rcnue2004/airline-revenue-management',
     liveUrl: '',
-    imageUrl: '',
+    imageUrls: [],
+    attachments: [],
     featured: true,
   },
   {
@@ -115,7 +131,8 @@ export const projects: Project[] = [
     courseContext: 'FIN 4395 — Capstone Senior Project, UT Dallas',
     githubUrl: '', // TODO: add GitHub URL
     liveUrl: '',
-    imageUrl: '',
+    imageUrls: [],
+    attachments: [],
     featured: true,
   },
   ];

@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { CheckCircle2, ExternalLink, Github, GraduationCap, ImageIcon, X } from 'lucide-react';
+import { CheckCircle2, ExternalLink, FileText, Github, GraduationCap, ImageIcon, X } from 'lucide-react';
 import { Project } from '../data/projects';
 
 export default function ProjectModal({
@@ -56,13 +56,18 @@ export default function ProjectModal({
               </button>
             </div>
 
-            {/* Screenshot or placeholder */}
-            {project.imageUrl ? (
-              <img
-                src={project.imageUrl}
-                alt={`${project.title} screenshot`}
-                className="mb-6 w-full rounded-xl border border-slate-200 dark:border-base-800"
-              />
+            {/* Screenshot gallery or placeholder */}
+            {project.imageUrls.length > 0 ? (
+              <div className="mb-6 space-y-4">
+                {project.imageUrls.map((url) => (
+                  <img
+                    key={url}
+                    src={url}
+                    alt={`${project.title} screenshot`}
+                    className="w-full rounded-xl border border-slate-200 dark:border-base-800"
+                  />
+                ))}
+              </div>
             ) : (
               <div className="mb-6 flex h-44 items-center justify-center rounded-xl border border-dashed border-slate-300 bg-slate-50 text-slate-400 dark:border-base-700 dark:bg-base-800/50">
                 <div className="flex flex-col items-center gap-2 text-sm">
@@ -108,6 +113,28 @@ export default function ProjectModal({
                 <GraduationCap size={16} className="shrink-0" />
                 {project.courseContext}
               </p>
+            )}
+
+            {/* Viewable/downloadable files */}
+            {project.attachments.length > 0 && (
+              <div className="mb-6">
+                <h4 className="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                  Files
+                </h4>
+                <div className="flex flex-wrap gap-3">
+                  {project.attachments.map((file) => (
+                    <a
+                      key={file.url}
+                      href={file.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition-colors hover:border-accent hover:text-accent dark:border-base-700 dark:text-slate-300"
+                    >
+                      <FileText size={15} /> {file.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
             )}
 
             <div className="flex flex-wrap gap-3">
